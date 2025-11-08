@@ -1,0 +1,54 @@
+{
+  "test_id": "TEST-002",
+  "test_name": "Thermal Cycling Test",
+  "test_method": "IEC 61215-2:2016 - MQT 12",
+  "standard": "IEC 61215",
+  "test_date": "2024-01-20T14:00:00",
+  "operator": "Jane Smith",
+  "equipment_used": [
+    "Thermal Chamber TC-200",
+    "I-V Measurement System"
+  ],
+  "sample_information": {
+    "sample_id": "SAMPLE-2024-002",
+    "manufacturer": "SolarTech Industries",
+    "model": "ST-300-72M",
+    "serial_number": "ST2024001235",
+    "rated_power": "300W",
+    "technology": "Monocrystalline"
+  },
+  "test_parameters": {
+    "temperature_range": "-40°C to +85°C",
+    "number_of_cycles": 200,
+    "cycle_duration": "6 hours per cycle",
+    "total_test_duration": "50 days"
+  },
+  "initial_measurements": {
+    "Pmax": 300.1,
+    "Voc": 45.2,
+    "Isc": 8.95,
+    "FF": 0.742
+  },
+  "final_measurements": {
+    "Pmax": 295.8,
+    "Voc": 45.0,
+    "Isc": 8.87,
+    "FF": 0.740
+  },
+  "calculated_values": {
+    "power_degradation": 1.43,
+    "power_degradation_percent": -1.43
+  },
+  "pass_fail_criteria": {
+    "Power_degradation": "< 5% degradation",
+    "Visual_inspection": "No major defects"
+  },
+  "visual_inspection": {
+    "before_test": "No defects observed",
+    "after_test": "No visual defects, slight discoloration at edges",
+    "wet_leakage_test": "PASS",
+    "isolation_test": "PASS"
+  },
+  "overall_result": "PASS",
+  "notes": "Module passed thermal cycling test with only 1.43% power degradation, well within the 5% limit. Minor aesthetic changes observed but no functional impact."
+}

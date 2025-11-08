@@ -1,0 +1,64 @@
+{
+  "test_id": "TEST-001",
+  "test_name": "I-V Characteristic Test",
+  "test_method": "IEC 61215-2:2016 - MST 01",
+  "standard": "IEC 61215",
+  "test_date": "2024-01-15T10:30:00",
+  "operator": "John Doe",
+  "equipment_used": [
+    "Solar Simulator SS-150A",
+    "I-V Tracer Model IVT-3000",
+    "Temperature Sensor PT-100"
+  ],
+  "sample_information": {
+    "sample_id": "SAMPLE-2024-001",
+    "manufacturer": "SolarTech Industries",
+    "model": "ST-300-72M",
+    "serial_number": "ST2024001234",
+    "rated_power": "300W",
+    "technology": "Monocrystalline",
+    "cell_count": 72
+  },
+  "test_conditions": {
+    "irradiance": "1000 W/m²",
+    "spectrum": "AM 1.5G",
+    "module_temperature": "25±2°C",
+    "ambient_temperature": "23°C",
+    "relative_humidity": "45%"
+  },
+  "measurements": {
+    "Voc": 45.2,
+    "Isc": 8.95,
+    "Vmp": 37.1,
+    "Imp": 8.09,
+    "Pmax": 300.1,
+    "FF": 0.742
+  },
+  "calculated_values": {
+    "efficiency": 18.45,
+    "area": 1.627,
+    "specific_power": 184.4
+  },
+  "pass_fail_criteria": {
+    "Pmax": "≥ 285W (95% of rated)",
+    "FF": "≥ 0.70",
+    "Efficiency": "≥ 17.5%"
+  },
+  "overall_result": "PASS",
+  "notes": "Module performed within specifications. All parameters met the required criteria.",
+  "iv_curve_data": [
+    {"voltage": 0.0, "current": 8.95, "power": 0.0},
+    {"voltage": 5.0, "current": 8.93, "power": 44.65},
+    {"voltage": 10.0, "current": 8.91, "power": 89.1},
+    {"voltage": 15.0, "current": 8.88, "power": 133.2},
+    {"voltage": 20.0, "current": 8.84, "power": 176.8},
+    {"voltage": 25.0, "current": 8.77, "power": 219.25},
+    {"voltage": 30.0, "current": 8.65, "power": 259.5},
+    {"voltage": 35.0, "current": 8.41, "power": 294.35},
+    {"voltage": 37.1, "current": 8.09, "power": 300.1},
+    {"voltage": 40.0, "current": 7.12, "power": 284.8},
+    {"voltage": 42.0, "current": 5.21, "power": 218.82},
+    {"voltage": 44.0, "current": 2.15, "power": 94.6},
+    {"voltage": 45.2, "current": 0.0, "power": 0.0}
+  ]
+}

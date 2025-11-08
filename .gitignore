@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Solar PV Lab OS Specific
+# Generated reports
+sample_data/generated_reports/*.pdf
+sample_data/generated_reports/*.docx
+sample_data/generated_reports/*.xlsx
+sample_data/generated_reports/archive/
+
+# Temporary files
+*.tmp
+*.temp
+
+# SQLite databases
+*.db
+*.sqlite
+
+# Streamlit cache
+.streamlit/
